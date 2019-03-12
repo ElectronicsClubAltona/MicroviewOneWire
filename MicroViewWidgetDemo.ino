@@ -45,8 +45,8 @@ void setup() {
   uView.begin();
   uView.clear(PAGE);
   // start serial port
-  Serial.begin(9600);
-  Serial.println("Dallas Temperature IC Control Library Demo");
+  //1  Serial.begin(9600);
+  //1  Serial.println("Dallas Temperature IC Control Library Demo");
 
   // Start up the library
   sensors.begin();
@@ -56,12 +56,12 @@ void loop() {
   int val;
   // call sensors.requestTemperatures() to issue a global temperature
   // request to all devices on the bus
-  Serial.print(" Requesting temperatures...");
+  //1Serial.print(" Requesting temperatures...");
   sensors.requestTemperatures(); // Send the command to get temperatures
-  Serial.println("DONE");
+  //1Serial.println("DONE");
 
-  Serial.print("Temperature is: ");
-  Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?
+  //1Serial.print("Temperature is: ");
+  //1Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?
   // You can have more than one IC on the same bus.
   // 0 refers to the first IC on the wire
 
