@@ -43,6 +43,7 @@ int16_t prevVal; // previous widget value
 
 void setup() {
   uView.begin();
+  uView.clear(PAGE);
   // start serial port
   Serial.begin(9600);
   Serial.println("Dallas Temperature IC Control Library Demo");
@@ -63,10 +64,12 @@ void loop() {
   Serial.print(sensors.getTempCByIndex(0)); // Why "byIndex"?
   // You can have more than one IC on the same bus.
   // 0 refers to the first IC on the wire
-  uView.display();
-  uView.setFontType(1);
+
+
+  //  uView.setFontType(1);
   uView.print((float)sensors.getTempCByIndex(0), 1);
-  uView.setFontType(0);
+  uView.display();
+  //  uView.setFontType(0);
   delay(5000);
 
 }
