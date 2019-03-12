@@ -68,6 +68,7 @@ void loop() {
 
   //  uView.setFontType(1);
   uView.print((float)sensors.getTempCByIndex(0), 2);
+  uView.print(" \n");
   uView.display();
   //  uView.setFontType(0);
   delay(5000);
