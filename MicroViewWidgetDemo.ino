@@ -65,7 +65,7 @@ void loop() {
   // You can have more than one IC on the same bus.
   // 0 refers to the first IC on the wire
 
-
+  uView.clear(PAGE);
   //  uView.setFontType(1);
   uView.print((float)sensors.getTempCByIndex(0), 2);
   uView.print(" \n");
