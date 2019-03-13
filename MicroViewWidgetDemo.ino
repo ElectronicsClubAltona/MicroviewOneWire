@@ -65,8 +65,8 @@ void loop() {
   // You can have more than one IC on the same bus.
   // 0 refers to the first IC on the wire
 
-  uView.clear(PAGE);
-  //  uView.setFontType(1);
+  uView.clear(ALL);  // was PAGE
+    uView.setFontType(0); // (1) works but is a large font
   uView.print((float)sensors.getTempCByIndex(0), 2);
   uView.print(" \n");
   uView.display();
