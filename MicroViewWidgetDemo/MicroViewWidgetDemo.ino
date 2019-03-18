@@ -40,7 +40,7 @@ void spin(int16_t lowVal, int16_t highVal, int16_t stepSize,
 MicroViewWidget *widget1, *widget2;
 
 int16_t prevVal; // previous widget value
-
+int count = 1;
 void setup() {
   uView.begin();
   uView.clear(PAGE);
@@ -68,7 +68,9 @@ void loop() {
   uView.clear(ALL);  // was PAGE
   uView.setFontType(0); // (1) works but is a large font
   uView.print((float)sensors.getTempCByIndex(0), 2);
-  uView.print(" \n");
+  uView.print(" ");
+  uView.print(count++);
+  uView.print("\n");
   uView.display();
   //  uView.setFontType(0);
   delay(5000);
