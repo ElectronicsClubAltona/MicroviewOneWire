@@ -1,10 +1,11 @@
 #include <MicroView.h>
 
 /*
-* select Arduino Uno for use with the uView OLED
- * 13 July - 2015
- Tuesday 23 February  14:54:42 AEDT 2021   revived on OPTI 745 XFCE Xubuntu
- */
+  select Arduino Uno for use with the uView OLED
+   13 July - 2015
+  Tuesday 23 February  14:54:42 AEDT 2021   revived on OPTI 745 XFCE Xubuntu
+  Sunday 13 Feb 2022 on Lenovo Windows 10 (Lyndon)
+*/
 void setup() {
   uView.begin();                  // start MicroView
   uView.clear(PAGE);              // clear page
@@ -16,27 +17,15 @@ void setup() {
 }
 
 void loop () {
-  for (int v=0; v<30; v++){ 
+  for (int v = 0; v < 30; v++) {
     //   uView.begin();                  // start MicroView
     //  uView.clear(PAGE);              // clear page
-    //  uView.println();  
+    //  uView.println();
     uView.print(".");
     uView.print(v);
-    delay(1000);     
+    delay(1000);
     uView.display();
   }
   uView.begin();                  // start MicroView
   uView.clear(PAGE);              // clear page
 }
-
-
-
-
-
-
-
-
-
-
-
-

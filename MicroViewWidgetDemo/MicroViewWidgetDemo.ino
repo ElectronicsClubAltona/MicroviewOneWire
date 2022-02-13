@@ -1,7 +1,8 @@
 
 #include <OneWire.h>
 #include <DallasTemperature.h>
-
+// 13 feb 2022 - find dallas in libraries and permit other support libs to be installed
+// Win 10 Lenovo (lyndon)
 // Data wire is plugged into pin 2 on the Arduino
 #define ONE_WIRE_BUS 2 // for microview veroboard
 
